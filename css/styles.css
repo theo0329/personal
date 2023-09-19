@@ -141,6 +141,7 @@ h2, .h2 {
 
 h3, .h3 {
   font-size: calc(1.325rem + 0.9vw);
+  text-decoration:underline;
 }
 @media (min-width: 1200px) {
   h3, .h3 {
@@ -10865,6 +10866,7 @@ p.lead {
   text-transform: uppercase;
   font-weight: 500;
   font-size: 1.5rem;
+  text-decoration:underline;
 }
 
 #sideNav {
@@ -10969,4 +10971,9 @@ section.resume-section .resume-section-content {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+}
+
+.ul-award{
+  color: red;
+  font-size: 22px;
 }
