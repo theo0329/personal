@@ -10974,7 +10974,7 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
-
+/* 以下為修改css */
 .ul-award{
   color: red;
   font-size: 22px;
@@ -11002,4 +11002,8 @@ div.job-company{
 h3.job-color{
   color: #bd5d38;
   font-size: 1.5rem;
+}
+
+.color{
+  color: #bd5d38;
 }
