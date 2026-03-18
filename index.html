@@ -8,9 +8,53 @@
         <title>關於Theo | Senior Full-Stack Engineer</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700,800" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            :root {
+                --primary-color: #0052cc;
+                --secondary-color: #2c3e50;
+                --accent-bg: #f0f4f9;
+            }
+            h1 { font-weight: 800; letter-spacing: -1px; color: var(--secondary-color); }
+            .text-primary { color: var(--primary-color) !important; }
+            .about-lead {
+                border-left: 5px solid #dee2e6;
+                padding-left: 20px;
+                line-height: 1.8;
+                color: #4a4a4a;
+            }
+            .job-title { font-size: 1.6rem; color: var(--secondary-color); font-weight: 700; margin-bottom: 0.2rem; }
+            .job-company-name { font-size: 1.1rem; color: #6c757d; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+            .badge-tech {
+                background-color: #e7f0ff;
+                color: var(--primary-color);
+                padding: 0.2rem 0.6rem;
+                border-radius: 4px;
+                font-size: 0.85rem;
+                font-weight: 700;
+                display: inline-block;
+                margin: 2px;
+                border: 1px solid #cce0ff;
+            }
+            .section-subheading {
+                border-left: 4px solid var(--primary-color);
+                padding-left: 15px;
+                margin-top: 25px;
+                margin-bottom: 15px;
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: var(--secondary-color);
+            }
+            .fa-ul-font-size { font-size: 1.05rem; line-height: 1.8; }
+            .ul-award li { margin-bottom: 15px; line-height: 1.6; }
+            .resume-section { padding-top: 5rem !important; padding-bottom: 5rem !important; }
+            hr { margin: 0; border-top: 1px solid #eee; }
+            @media (max-width: 768px) {
+                .resume-section { padding-top: 3rem !important; padding-bottom: 3rem !important; }
+            }
+        </style>
     </head>
     <body id="page-top">
         <div class="cha_lan">
@@ -26,10 +70,9 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">關於我</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">工作經歷</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience_extra">相關專案</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience_extra">專案實踐</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">擅長技能</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">特殊貢獻</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="resume/Portfolio.pdf">作品集</a></li>
                 </ul>
             </div>
         </nav>
@@ -38,135 +81,128 @@
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
                     <h1 class="mb-0">黃品堯 <span class="text-primary">Theo Huang</span></h1>
-                    <div class="subheading mb-5" style="padding-top: 20px;">
-                        資深全端工程師 | Senior Full-Stack Engineer
-                        <p><a href="mailto:sky00329@gmail.com">sky00329@gmail.com</a></p>
+                    <div class="subheading mb-4" style="font-size: 1.2rem; font-weight: 500; margin-top: 10px;">
+                        資深全端工程師 · <span class="text-primary">AI-Native 數位轉型實踐者</span>
+                        <p class="mt-2" style="font-size: 1rem;"><i class="fas fa-envelope mr-2"></i><a href="mailto:sky00329@gmail.com">sky00329@gmail.com</a></p>
                     </div>
-                    <p class="lead mb-5">
-                        具備豐富的電商平台開發與系統架構經驗，現任職於 <b>露天市集</b>。專精於微服務架構優化與複雜系統整合。
-                        <br><br>
-                        身為 <b>AI-Native 數位轉型實踐者</b>，我深度整合 <b>Cursor</b> 與 <b>Gemini 3</b> 於大型專案開發流中，顯著提升開發人效與代碼可靠性。近期專注於 <b>AdTech (廣告技術)</b> 與數據自動化，透過 <b>n8n</b> 與 <b>Python CAPI</b> 解決廣告歸因痛點，為業務創造具體成長。
+                    <p class="lead mb-5 about-lead">
+                        具備豐富的電商平台開發與系統架構經驗，現任職於 <b>露天市集</b>。專精於微服務架構優化與複雜系統整合。<br><br>
+                        身為 <b>AI-Native 開發者</b>，我深度整合 <span class="badge-tech">Cursor</span> 與 <span class="badge-tech">Gemini 3</span> 於大型專案開發流中，顯著提升開發人效。近期專注於 <b>AdTech (廣告技術)</b> 與數據自動化，透過 <span class="badge-tech">n8n</span> 與 <span class="badge-tech">Python CAPI</span> 解決廣告歸因痛點，為業務創造具體成長。
                     </p>
                     <div class="social-icons">
-                        <a target="_blank" class="social-icon" href="https://github.com/theo0329/personal" ><i class="fab fa-github"></i></a>
+                        <a target="_blank" class="social-icon" href="https://github.com/theo0329/personal"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </section>
 
-            <hr class="m-0" />
+            <hr />
 
-<section class="resume-section" id="experience">
-    <div class="resume-section-content">
-        <h2 class="mb-5">工作經歷</h2>
+            <section class="resume-section" id="experience">
+                <div class="resume-section-content">
+                    <h2 class="mb-5"><i class="fas fa-briefcase mr-3 text-primary"></i>工作經歷</h2>
 
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <div class="job-company"><h3 class="mb-0 job-color">Senior Full-Stack Engineer</h3></div>
-                <div class="job-company">－</div>
-                <div class="subheading job-company mb-3">露天市集 (PChome & eBay)</div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <div class="job-title">Senior Full-Stack Engineer</div>
+                            <div class="job-company-name mb-3">露天市集 (PChome & eBay)</div>
 
-                <h5 class="text-secondary">大規模電商系統維護與優化</h5>
-                <p>✲ <b>微服務架構實踐</b>：維護「雲市集」微服務，主導多方第三方金流與物流系統串接，確保在高併發環境下交易數據的一致性與穩定性。</p>
-                <p>✲ <b>高效管理後台系統</b>：優化供應商與內部營運管理後台，透過系統性重構與介面優化，提升營運作業效率逾 40%。</p>
+                            <div class="section-subheading">大規模電商系統維護與優化</div>
+                            <p>✲ <b>微服務架構實踐</b>：維護「雲市集」微服務，主導多方第三方金流與物流系統串接，確保在高併發環境下交易數據的一致性與穩定性。</p>
+                            <p>✲ <b>高效管理後台系統</b>：透過系統性重構與介面優化，提升內部營運作業效率逾 <b class="text-primary">40%</b>。</p>
 
-                <h5 class="text-secondary">廣告技術 (AdTech) 與數據自動化</h5>
-                <p>✲ <b>n8n 自動化數據決策 (2025/04)</b>：整合 Meta/Google API 建立自動化數據抓取流程，為行銷團隊提供即時決策支持。</p>
-                <p>✲ <b>Meta CAPI 伺服器端部署 (2026/02)</b>：使用 <b>Python</b> 部署 Conversions API，解決第三方 Cookie 限制導致的數據歸因落差，優化 ROAS 表現。</p>
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">2024/12 – Present</span></div>
-        </div>
+                            <div class="section-subheading">廣告技術 (AdTech) 與數據自動化</div>
+                            <p>✲ <b>n8n 自動化數據決策 (2025/04)</b>：整合 Meta/Google API 建立自動化數據抓取流程，驅動即時決策支持。</p>
+                            <p>✲ <b>Meta CAPI 伺服器端部署 (2026/02)</b>：使用 <b>Python</b> 部署 Conversions API，優化廣告數據歸因與 ROAS 表現。</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="badge bg-primary text-white p-2">2024/12 – Present</span></div>
+                    </div>
 
-        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div class="flex-grow-1">
-                <div class="job-company"><h3 class="mb-0 job-color">Full-Stack Engineer</h3></div>
-                <div class="job-company">－</div>
-                <div class="subheading job-company mb-3">菁英雲科技股份有限公司</div>
-                <p>✲ 負責電子合約線上簽章、第三方支付 API 整合及教師/學生管理系統之全端開發。</p>
-            </div>
-            <div class="flex-shrink-0"><span class="text-primary">2023/06 – 2024/12</span></div>
-        </div>
-    </div>
-</section>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <div class="job-title">Full-Stack Engineer</div>
+                            <div class="job-company-name mb-3">菁英雲科技股份有限公司</div>
+                            <p>✲ 主導開發基於 Canvas 的電子合約簽署系統、第三方支付整合及 EIP 權限管理系統。</p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-muted">2023/06 – 2024/10</span></div>
+                    </div>
+                </div>
+            </section>
 
-<section class="resume-section" id="experience_extra">
-    <div class="resume-section-content">
-        <h2 class="mb-5">專案經歷 (AI-Native 實踐)</h2>
+            <hr />
 
-        <div class="mb-5">
-            <div class="subheading mb-2">樂學易 (LoveSharing) 內容變現平台 | 百萬級接案項目</div>
-            <p>✲ <b>AI-Native 開發實踐</b>：深度運用 <b>Cursor</b> 與 <b>Gemini 3</b> 進行快速原型設計與核心功能開發，顯著降低開發週期。</p>
-            <p>✲ <b>技術核心</b>：使用 Laravel 12 與 GCP 架構，開發封閉式點數錢包、作家訂閱系統及 Cloud Armor 資安防護。</p>
-        </div>
+            <section class="resume-section" id="experience_extra">
+                <div class="resume-section-content">
+                    <h2 class="mb-5"><i class="fas fa-project-diagram mr-3 text-primary"></i>專案實踐 (AI-Native & Fintech)</h2>
 
-        <div class="mb-5">
-            <div class="subheading mb-2">playMingle 遊戲平台 | 全端開發</div>
-            <p>✲ <b>AI 協作實踐</b>：利用 AI 輔助處理複雜的遊戲邏輯與 LINE Login 整合。</p>
-            <p>✲ <b>專案亮點</b>：專為單機多人實體互動設計，處理多人同步操作與遊戲狀態管理。</p>
-        </div>
+                    <div class="mb-5">
+                        <div class="job-title" style="font-size: 1.3rem;">playMingle 遊戲平台</div>
+                        <div class="mb-2">
+                            <span class="badge-tech">LINE Pay API</span>
+                            <span class="badge-tech">自動續訂 (Recurring Payment)</span>
+                            <span class="badge-tech">Laravel 12</span>
+                        </div>
+                        <p>✲ <b>Fintech 整合</b>：主導 <b>LINE Pay</b> 串接，並實作 <b>RegKey 自動續訂機制</b>，設計排程扣款流程與訂閱狀態管理，提升平台轉化與留存。</p>
+                        <p>✲ <b>AI 協作實踐</b>：利用 AI 輔助處理多人同步操作與遊戲狀態管理，專為單機多人實體互動場景優化。</p>
+                    </div>
 
-        <div class="mb-5">
-            <div class="subheading mb-2">藻知系統 (Algae Intelligence) | 物聯網整合專案</div>
-            <p>✲ <b>技術核心</b>：Aliyun IoT, LoRaWAN, MQTT。獨立開發從感測器數據抓取、Hex 封包解析到 Laravel 監控面板的完整鏈路。</p>
-        </div>
+                    <div class="mb-5">
+                        <div class="job-title" style="font-size: 1.3rem;">樂學易 (LoveSharing) 內容變現平台</div>
+                        <div class="mb-2"><span class="badge-tech">接案項目</span> <span class="badge-tech">Laravel 12</span> <span class="badge-tech">GCP</span></div>
+                        <p>✲ <b>技術核心</b>：獨立完成百萬級接案項目，開發封閉式點數錢包、作家訂閱系統及 Cloud Armor 資安防護。</p>
+                    </div>
 
-        <div class="mt-4">
-            <h5 class="text-secondary small">早期資歷 (2011-2019)</h5>
-            <p class="small text-muted">莫博創意 (PHP/Magento/Crypto ATM)、師大 (認證系統維護)、普安科技 (QA 系統工程師)。</p>
-        </div>
-    </div>
-</section>
-<section class="resume-section" id="skills">
-    <div class="resume-section-content">
-        <h2 class="mb-5">擅長技能</h2>
+                    <div class="mb-5">
+                        <div class="job-title" style="font-size: 1.3rem;">藻知系統 (Algae Intelligence)</div>
+                        <div class="mb-2"><span class="badge-tech">IoT Integration</span> <span class="badge-tech">MQTT</span> <span class="badge-tech">LoRaWAN</span></div>
+                        <p>✲ 獨立實現從感測器數據抓取、Hex 封包解析到後端監控面板的完整鏈路。</p>
+                    </div>
 
-        <div class="subheading-no-underline mb-3">AI 協作與數據自動化 (AI & Data Automation)</div>
-        <ul class="fa-ul mb-4 fa-ul-font-size">
-            <li><span class="fa-li"><i class="fas fa-robot text-primary"></i></span><b>AI-Native Development:</b> 熟練運用 <b>Cursor</b> 與 <b>Gemini 3</b> 進行代碼重構、複雜邏輯解析及加速開發迭代。</li>
-            <li><span class="fa-li"><i class="fas fa-sync text-primary"></i></span><b>Workflow Automation:</b> 使用 <b>n8n</b> 串接 Meta/Google API，實現自動化數據抓取與 ETL 流程。</li>
-            <li><span class="fa-li"><i class="fas fa-chart-line text-primary"></i></span><b>AdTech Integration:</b> 使用 <b>Python</b> 部署 <b>Meta Conversions API (CAPI)</b>，優化廣告數據歸因。</li>
-        </ul>
+                    <div class="mt-4 pt-3" style="border-top: 1px dashed #ccc;">
+                        <h5 class="text-secondary small">早期經歷與專案 (2011-2019)</h5>
+                        <p class="small text-muted">莫博創意 (PHP/Magento/Crypto ATM)、師大 (認證系統維護)、普安科技 (QA 系統工程師)。</p>
+                    </div>
+                </div>
+            </section>
 
-        <div class="subheading-no-underline mb-3">後端開發與架構 (Backend & Architecture)</div>
-        <ul class="fa-ul mb-4 fa-ul-font-size">
-            <li><span class="fa-li"><i class="fas fa-check"></i></span><b>Core Tech:</b> PHP (Laravel 12 / Lumen)、Python (CAPI / Automation)、Go (Basic)。</li>
-            <li><span class="fa-li"><i class="fas fa-check"></i></span><b>E-commerce:</b> 微服務架構 (Microservices)、第三方金物流串接 (綠界、藍新等)、電子發票系統。</li>
-            <li><span class="fa-li"><i class="fas fa-check"></i></span><b>Database:</b> MySQL (效能優化與索引設計)、Redis 緩存應用。</li>
-        </ul>
+            <hr />
 
-        <div class="subheading-no-underline mb-3">雲端運維與通訊 (Cloud & IoT)</div>
-        <ul class="fa-ul mb-0 fa-ul-font-size">
-            <li><span class="fa-li"><i class="fas fa-cloud text-primary"></i></span><b>Infrastructure:</b> GCP (Cloud Armor / GCS)、Aliyun (IoT Platform)、AWS。</li>
-            <li><span class="fa-li"><i class="fas fa-network-wired text-primary"></i></span><b>IoT Protocal:</b> MQTT、LoRaWAN 感測器數據解析與異質數據整合。</li>
-            <li><span class="fa-li"><i class="fas fa-tools text-primary"></i></span><b>DevOps Tooling:</b> Docker 容器化、Nginx 配置、Git (Gitflow)。</li>
-        </ul>
-    </div>
-</section>
-<section class="resume-section" id="awards">
-    <div class="resume-section-content">
-        <h2 class="mb-5">特殊貢獻</h2>
-        <ul class="fa-ul mb-0 ul-award">
-            <li>
-                <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                <b>高併發電商營收紀錄</b>：於莫博新創電商期間，主導技術維護與行銷自動化流程，創下連續三週單日營業額突破 600 萬台幣，最高單日達 3,000 萬韓元之紀錄。
-            </li>
+            <section class="resume-section" id="skills">
+                <div class="resume-section-content">
+                    <h2 class="mb-5"><i class="fas fa-tools mr-3 text-primary"></i>擅長技能</h2>
 
-            <li>
-                <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                <b>金融科技實踐</b>：成功架設並維運高雄第一台**虛擬貨幣 ATM (BTM)**，處理加密貨幣與法幣間的實體交易整合技術。
-            </li>
+                    <div class="section-subheading">AI 協作與數據自動化</div>
+                    <ul class="fa-ul mb-4 fa-ul-font-size">
+                        <li><span class="fa-li"><i class="fas fa-robot text-primary"></i></span><b>AI-Native:</b> Cursor (Primary IDE), Gemini 3 (Code Analysis)</li>
+                        <li><span class="fa-li"><i class="fas fa-sync text-primary"></i></span><b>Automation:</b> n8n Workflow, Python CAPI, ETL</li>
+                    </ul>
 
-            <li>
-                <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                <b>智慧農業物聯網整合 (藻知系統)</b>：獨立完成從 LoRaWAN 硬體端到雲端 (Aliyun) 的端到端架構，實現異質感測器封包數據解析，將繁雜的 Hex 原始數據轉化為具備商業價值的視覺化監控指標。
-            </li>
+                    <div class="section-subheading">後端開發與系統協作</div>
+                    <ul class="fa-ul mb-4 fa-ul-font-size">
+                        <li><span class="fa-li"><i class="fas fa-code text-primary"></i></span><b>Languages:</b> PHP (Laravel 12 / Lumen), Python</li>
+                        <li><span class="fa-li"><i class="fas fa-sitemap text-primary"></i></span><b>Fintech:</b> LINE Pay (RegKey 模式)、第三方金物流串接</li>
+                    </ul>
 
-            <li>
-                <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                <b>百萬級內容變現架構設計</b>：獨立承接並開發「樂學易」平台，從 0 到 1 設計封閉式點數錢包與作家訂閱自動撥款邏輯，確保金流處理的嚴謹性與資安防護 (GCP Cloud Armor)。
-            </li>
-        </ul>
-    </div>
-</section>
+                    <div class="section-subheading">雲端運維與通訊</div>
+                    <ul class="fa-ul mb-0 fa-ul-font-size">
+                        <li><span class="fa-li"><i class="fas fa-cloud text-primary"></i></span><b>Infrastructure:</b> GCP (Cloud Armor), Aliyun IoT, Docker, Gitflow</li>
+                        <li><span class="fa-li"><i class="fas fa-wifi text-primary"></i></span><b>Protocols:</b> MQTT, LoRaWAN 數據解析</li>
+                    </ul>
+                </div>
+            </section>
+
+            <hr />
+
+            <section class="resume-section" id="awards">
+                <div class="resume-section-content">
+                    <h2 class="mb-5"><i class="fas fa-award mr-3 text-primary"></i>特殊貢獻</h2>
+                    <ul class="fa-ul mb-0 ul-award">
+                        <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span><b>高併發電商紀錄</b>：主導莫博創意與IplayGame91代儲平台，技術協作與自動化流，創下單日營業額破 6000 萬韓元紀錄。</li>
+                        <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span><b>自動續訂系統實作</b>：於個人專案成功導入 LINE Pay 自動扣款機制，建立穩定訂閱現金流模組。</li>
+                        <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span><b>IoT 數據解析突破</b>：將 LoRaWAN 異質感測器數據轉化為商業監控指標。</li>
+                        <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span><b>百萬級架構設計</b>：獨立完成樂學易平台之點數錢包與自動撥款嚴謹邏輯。</li>
+                    </ul>
+                </div>
+            </section>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="js/scripts.js"></script>

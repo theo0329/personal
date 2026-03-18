@@ -3,26 +3,63 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>About Theo</title>
+        <meta name="description" content="Theo Huang - Senior Full-Stack Engineer Portfolio" />
+        <meta name="author" content="Theo Huang" />
+        <title>Theo Huang | Senior Full-Stack Engineer</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700,800" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            :root {
+                --primary-color: #0052cc;
+                --secondary-color: #2c3e50;
+                --accent-bg: #f0f4f9;
+            }
+            h1 { font-weight: 800; letter-spacing: -1px; color: var(--secondary-color); }
+            .text-primary { color: var(--primary-color) !important; }
+            .about-lead {
+                border-left: 5px solid #dee2e6;
+                padding-left: 20px;
+                line-height: 1.8;
+                color: #4a4a4a;
+            }
+            .job-title { font-size: 1.6rem; color: var(--secondary-color); font-weight: 700; margin-bottom: 0.2rem; }
+            .job-company-name { font-size: 1.1rem; color: #6c757d; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+            .badge-tech {
+                background-color: #e7f0ff;
+                color: var(--primary-color);
+                padding: 0.2rem 0.6rem;
+                border-radius: 4px;
+                font-size: 0.85rem;
+                font-weight: 700;
+                display: inline-block;
+                margin: 2px;
+                border: 1px solid #cce0ff;
+            }
+            .section-subheading {
+                border-left: 4px solid var(--primary-color);
+                padding-left: 15px;
+                margin-top: 25px;
+                margin-bottom: 15px;
+                font-size: 1.1rem;
+                font-weight: 700;
+                color: var(--secondary-color);
+            }
+            .fa-ul-font-size { font-size: 1.05rem; line-height: 1.8; }
+            .ul-award li { margin-bottom: 15px; line-height: 1.6; }
+            .resume-section { padding-top: 5rem !important; padding-bottom: 5rem !important; }
+            hr { margin: 0; border-top: 1px solid #eee; }
+            @media (max-width: 768px) {
+                .resume-section { padding-top: 3rem !important; padding-bottom: 3rem !important; }
+            }
+        </style>
     </head>
     <body id="page-top">
-        <!-- 語言切換 -->
-        <!-- <div class="cha_lan">
-            <div>
-                <a class="cha_lan" href="index.html">中文版</a>
-            </div>
-        </div> -->
-        <!-- Navigation-->
+        <div class="cha_lan">
+            <div><a class="cha_lan" href="index.html">中文版</a></div>
+        </div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">Theo Huang</span>
@@ -31,377 +68,143 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">ABOUT</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">WORK EXPERIENCE</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience_extra">CODING EXPERIENCE</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">EDUCATION</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">SKILLS</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">INTERESTS</a></li> -->
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Special Projects</a></li>
-                    <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#myself">AUTOBIOGRAPHY</a></li> -->
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="resume/Portfolio.pdf">PORTFOLIO</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="https://www.cakeresume.com/pdf/s--tF1khhmckTckRtibXAnBUA--/74JM6.pdf">RESUME</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">中文版</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience_extra">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Achievements</a></li>
                 </ul>
             </div>
         </nav>
-        <!-- Page Content-->
+
         <div class="container-fluid p-0">
-            <!-- About-->
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        黃品堯
-                        <span class="text-primary">Theo Huang</span>
-                    </h1>
-                    <div class="subheading mb-5" style="padding-top: 20px;">
-                        WEB ENGINEER
-                        <p><a href="mailto:name@email.com">sky00329@gmail.com</a></p>                    
+                    <h1 class="mb-0">Theo <span class="text-primary">Huang</span></h1>
+                    <div class="subheading mb-4" style="font-size: 1.2rem; font-weight: 500; margin-top: 10px;">
+                        Senior Full-Stack Engineer · <span class="text-primary">AI-Native Developer</span>
+                        <p class="mt-2" style="font-size: 1rem;"><i class="fas fa-envelope mr-2"></i><a href="mailto:sky00329@gmail.com">sky00329@gmail.com</a></p>
                     </div>
-                    <p class="lead mb-5">I'm  Specialized in programing languages , such as PHP,HTML,JQUERY,AJAX,MySQL,CSS ,and I have wide range of experiences in completing 
-                        open source ,such as Wordpress,Magento1,Magento2,Laravel,Joomla including B2B,B2C and C2C. 
-                        I utilized Bootstrap  and JQUERY to complete UI optimization based on Laravel architecture.I used PHP as the basic to develop APIs, APIs connection ,and RWD to cooperate
-                        with mobile users to improve UX. Using MVC architecture to simplify code to reduce technical debt, and paying attention to Git version control to avert conflicts and backup during teamwork.
+                    <p class="lead mb-5 about-lead">
+                        Seasoned Full-Stack Engineer with extensive experience in e-commerce platform development and system architecture. Currently at <b>Ruten (PChome & eBay)</b>, specializing in microservices optimization and complex system integrations.<br><br>
+                        As an <b>AI-Native practitioner</b>, I leverage <span class="badge-tech">Cursor</span> and <span class="badge-tech">Gemini 3</span> to streamline development workflows and enhance code reliability. Recently focused on <b>AdTech</b> and data automation, utilizing <span class="badge-tech">n8n</span> and <span class="badge-tech">Python CAPI</span> to solve data attribution challenges and drive business growth.
                     </p>
-                    
                     <div class="social-icons">
-                        <a class="social-icon" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                        <a  target="_blank" class="social-icon" href="https://github.com/theo0329/personal" ><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a>
+                        <a target="_blank" class="social-icon" href="https://github.com/theo0329/personal"><i class="fab fa-github"></i></a>
                     </div>
                 </div>
             </section>
-            <hr class="m-0" />
-            <!-- Experience-->
-                     <section class="resume-section" id="experience">
+
+            <hr />
+
+            <section class="resume-section" id="experience">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">EXPERIENCE</h2>
+                    <h2 class="mb-5"><i class="fas fa-briefcase mr-3 text-primary"></i>Work Experience</h2>
+
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <div class="job-company"><h3 class="mb-0 job-color">Full-Stack-engineer</h3></div>
-                            <div class="job-company">－</div>
-                            <div class="subheading job-company mb-3">ELITE DIGITAL EDUCATION INC.</div>
-                            
-                            <h5>Job Responsibilities：</h5>
-                            <p>✲ Electronic Contract Development－E-Sinature(canvas)</p>
-                            <p>✲ Third-party Payment API</p>
-                            <ol>
-                                <li>Online Credit Card Payment</li>
-                                <li>Online Open An Invoice</li>
-                                <li>Online Allowance Invoice</li>
-                            </ol>
-                            <p>✲ Teachers Management System</p>
-                            <ol>
-                                <li>API</li>
-                                <li>Teachers Imprest Payroll Account Management</li>
-                            </ol>
-                            <p>✲ Teachers Essay marking System</p>
-                            <ol>
-                                <li>UI Design</li>
-                                <li>Front-end coding</li>
-                                <li>Convert HTML to Word in PHP (phpword)</li>
-                            </ol>
-                            <p>✲ Students Essay marking System </p>
-                            <p>✲ Wordpress Development－Elite International Language Online Education Center</p>
-                            <ol>
-                                <li>Social Login</li>
-                                <li>Third-Party Payment API</li>
-                                <li>Access Control Right Of Students (API)</li>
-                                <li>System Maintenance</li>
-                            </ol>
-                            <p>✲ Wordpress Development－go!test!</p>
-                            <ol>
-                                <li>Third-party Payment API</li>
-                                <li>Wordpress Woocommerce Shopcart</li>
-                                <li>UI Design</li>
-                            </ol>
- 
+                            <div class="job-title">Senior Full-Stack Engineer</div>
+                            <div class="job-company-name mb-3">Ruten (PChome & eBay)</div>
+
+                            <div class="section-subheading">Scalable E-commerce Architecture</div>
+                            <p>✲ <b>Microservices Implementation</b>: Maintaining "Cloud Marketplace" microservices, leading the integration of diverse 3rd-party payment and logistics gateways to ensure data consistency under high concurrency.</p>
+                            <p>✲ <b>Admin System Optimization</b>: Refactored vendor and internal management systems, improving operational efficiency by over <b class="text-primary">40%</b> through UI/UX and architectural enhancements.</p>
+
+                            <div class="section-subheading">AdTech & Data Automation</div>
+                            <p>✲ <b>n8n Data Automation (2025/04)</b>: Orchestrated automated ETL workflows via Meta/Google APIs to provide real-time decision support for marketing teams.</p>
+                            <p>✲ <b>Meta CAPI Deployment (2026/02)</b>: Deployed Server-Side Conversions API using <b>Python</b> to bypass browser limitations, optimizing attribution accuracy and ROAS performance.</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">June 2023 - Present</span></div>
+                        <div class="flex-shrink-0"><span class="badge bg-primary text-white p-2">2024/12 – Present</span></div>
                     </div>
+
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <div class="job-company"><h3 class="mb-0 job-color">PHP Back-end-engineer </h3></div>
-                            <div class="job-company">－</div>
-                            <div class="subheading mb-3 job-company">National Taiwan Normal University</div>
-                            <h5>Job Responsibilities：</h5>
-                            <p>✲ Certification of Aboriginal Language Abilities Kegistration System</p>
-                            <ol>
-                                <li>SSL Certificate</li>
-                                <li>System Development</li>
-                                <li>System Maintenance</li>
-                                <li>Server Maintenance</li>
-                                <li>Convert HTML to PDF in PHP </li>
-                            </ol>
-                            <p>✲ Southern Min Language Proficiency Test Kegistration System</p>
-                            <ol>
-                                <li>System Maintenance</li>
-                                <li>System Development</li>
-                                <li>Server Maintenance</li>
-                            </ol>
-                            <p>✲ General Taiwanese Proficiency Test Kegistration System</p>
-                            <ol>
-                                <li>System Maintenance</li>
-                                <li>System Development</li>
-                                <li>Server Maintenance</li>
-                            </ol>
-                            <p>✲ Score Inquiry System</p>
-                            <ol>
-                                <li>System Development</li>
-                                <li>Database Performance Tuning</li>
-                            </ol>
-                            <p>✲ Exam Question System</p>
-                            <ol>
-                                <li>System Development</li>
-                                <li>Database Performance Tuning</li>
-                                <li>UI Performance Tuning</li>
-                            </ol>
-                            <p>✲ Examination Room Management System</p>
-                            <ol>
-                                <li>System Analysis</li>
-                                <li>System Design</li>
-                                <li>System Engineer</li>
-                            </ol>
-                          
+                            <div class="job-title">Full-Stack Engineer</div>
+                            <div class="job-company-name mb-3">Elite Cloud Technology Co., Ltd.</div>
+                            <p>✲ Spearheaded the development of a Canvas-based e-contract signing system, 3rd-party payment integrations, and internal EIP permission management systems.</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">january 2023 - June 2023</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <div class="job-company"><h3 class="mb-0 job-color">PHP Back-end-engineer</h3></div>
-                                <div class="job-company">－</div>
-                            <div class="subheading job-company mb-3">MOBOR CO., LTD.</div>
-                            <h5>Job Responsibilities：</h5>
-                            <p>✲ Official Website－wordpress</p>
-                            <ol>
-                                <li>System Analysis</li>
-                                <li>System Engineer</li>
-                                <li>API</li>
-                                <li>Plugins Development</li>
-                            </ol>
-                            <p>✲ E-commerce Website</p>
-                            <ol>
-                                <li>magento 1</li>
-                                <li>magento 2</li>
-                                <li>Plugins Development</li>
-                            </ol>
-                            <p>✲ Cryptocurrency ATM Set Up </p>
-                            <p>✲ OJT(Ｍagento 2)-TA</p>
-                            
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2017 - July 2019</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <div class="job-company"><h3 class="mb-0 job-color">QA System Engineer</h3></div>
-                            <div class="job-company">－</div>
-                            <div class="subheading job-company mb-3">Infortrend Technology, Inc.</div>
-                            <h5>Job Responsibilities：</h5>
-                            <p>✲ System Maintenance,System Development</p>
-                            <p>✲ Database Performance Tuning-Efficiency Improvement 300%</p>
-                            <p>✲ NAS Maintenance</p>
-                            <p>✲ Joomla(open source)Set Up</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2013 - June 2014</span></div>
+                        <div class="flex-shrink-0"><span class="text-muted">2023/06 – 2024/10</span></div>
                     </div>
                 </div>
             </section>
-    <hr class="m-0" />
-            <!-- Extra Experience-->
+
+            <hr />
+
             <section class="resume-section" id="experience_extra">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">CODING EXPERIENCE</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <div class="subheading mb-3">Tai Ji Men Qigong Academy(Laravel)</div>
-                            <h5>Job Responsibilities</h5>
-                            <p>✲ Web Maintenance</p>
-                            <p>✲ Development</p>
-                            <ol>
-                                <li>Language Translatioin API</li>
-                                <li>E-Sinature</li>
-                            </ol>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2022 - Present</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <div class="subheading mb-3">Chung Yuan Christian University－Military Education Office Web</div>
-                            <h5>Job Responsibilities：</h5>
-                            <p>✲ Web Maintenance</p>
-                            <p>✲ Northern Taiwan Universities Students Service System</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">February 2012 - June 2012</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <div class="subheading mb-3">March Out Christian church Volunteer Management System</div>
-                            <h5>Job Responsibilities：</h5>
-                            <p>✲ Framework Development</p>
-                            <p>✲ Volunteer Management</p>
-                            <ol>
-                                <li>Volunteer Register</li>
-                                <li>Volunteer Attendance Record</li>
-                                <li>Awards Record</li>
-                            </ol>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">February 2012 - April 2012</span></div>
-                    </div>
-                        
-                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                            <div class="flex-grow-1">
-                                <div class="subheading mb-3">CYCU Department of Information Management Website</div>
-                                <h5>Job Responsibilities：</h5>
-                                <p>✲ Student Information System</p>
-                                <ol>
-                                    <li>Scholarship Application System</li>
-                                    <li>Meetings Management System for Professor</li>
-                                    <li>Essay serch Engine</li>
-                                </ol>
-                            </div>
-                            <div class="flex-shrink-0"><span class="text-primary">August 2011 - November 2011</span></div>
-                            </div>
-                        
-                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                            <div class="flex-grow-1">
-                                <div class="subheading mb-3">HUNG CHIAO BED-CLOTHES CO., LTD － ERP System</div>
-                                <h5>Job Responsibilities：</h5>
-                                    <p>✲ Inventory Management System</p>
-                            </div>
-                                <div class="flex-shrink-0"><span class="text-primary">August 2011 - November 2011</span></div>
-                            
-                        </div>
-            </section>
+                    <h2 class="mb-5"><i class="fas fa-project-diagram mr-3 text-primary"></i>Project Implementation (Fintech & IoT)</h2>
 
-            <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0 ">Chung Yuan Christian University</h3>
-                            <div class="subheading-no-underline mb-3">Department of Information Management</div>
-                            <div>Student Association of Information Management Department </div>
-                            <div>Department of Information Management PHP Training Camp － TA</div>
+                    <div class="mb-5">
+                        <div class="job-title" style="font-size: 1.3rem;">playMingle Gaming Platform</div>
+                        <div class="mb-2">
+                            <span class="badge-tech">LINE Pay API</span>
+                            <span class="badge-tech">Recurring Payment</span>
+                            <span class="badge-tech">Laravel 12</span>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">September 2008 - June 2012</span></div>
+                        <p>✲ <b>Fintech Integration</b>: Led the <b>LINE Pay</b> integration with <b>RegKey recurring billing</b>, designing automated scheduling and subscription management to boost retention.</p>
+                        <p>✲ <b>AI-Assisted Workflow</b>: Utilized AI agents to handle complex multiplayer synchronization and state management for real-world physical interaction scenarios.</p>
+                    </div>
+
+                    <div class="mb-5">
+                        <div class="job-title" style="font-size: 1.3rem;">LoveSharing Monetization Platform</div>
+                        <div class="mb-2"><span class="badge-tech">Solo Project</span> <span class="badge-tech">Laravel 12</span> <span class="badge-tech">GCP</span></div>
+                        <p>✲ <b>Core Tech</b>: Independently architected a million-scale monetization platform, featuring closed-loop point wallets, creator subscription models, and GCP Cloud Armor security.</p>
+                    </div>
+
+                    <div class="mb-5">
+                        <div class="job-title" style="font-size: 1.3rem;">Algae Intelligence System (IoT)</div>
+                        <div class="mb-2"><span class="badge-tech">IoT Integration</span> <span class="badge-tech">MQTT</span> <span class="badge-tech">LoRaWAN</span></div>
+                        <p>✲ Developed an end-to-end IoT pipeline: from sensor data ingestion and Hex payload parsing to Laravel-based real-time monitoring dashboards.</p>
+                    </div>
+
+                    <div class="mt-4 pt-3" style="border-top: 1px dashed #ccc;">
+                        <h5 class="text-secondary small">Early Career & Projects (2011-2019)</h5>
+                        <p class="small text-muted">Mobor (PHP/Magento/Crypto ATM), NTNU (System Maintenance), Infortrend Technology (QA System Engineer).</p>
                     </div>
                 </div>
             </section>
 
-            <hr class="m-0" />
-            <!-- Skills-->
+            <hr />
+
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading-no-underline mb-3">PROGRAMMING LANGUAGES & TOOLS</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5 color" ></i></li>
-                        <li class="list-inline-item"><i class="fa-brands fa-php color"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt color"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square color"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress color"></i></li>
-                        <li class="list-inline-item"><i class="fa-brands fa-github color"></i></li>
-                        <li class="list-inline-item"><i class="fa-brands fa-docker color"></i></li>
-                        <li class="list-inline-item"><i class="fa-brands fa-dropbox color"></i></li>
-                        <li class="list-inline-item"><i class="fa-brands fa-magento color"></i></li>
-                        <li class="list-inline-item"><i class="fa-brands fa-laravel color"></i></li>
-                        <li class="list-inline-item"><i class="fa-brands fa-joomla color"></i></li>
+                    <h2 class="mb-5"><i class="fas fa-tools mr-3 text-primary"></i>Technical Skills</h2>
 
+                    <div class="section-subheading">AI & Data Automation</div>
+                    <ul class="fa-ul mb-4 fa-ul-font-size">
+                        <li><span class="fa-li"><i class="fas fa-robot text-primary"></i></span><b>AI-Native:</b> Cursor (Primary IDE), Gemini 3 (Refactoring & Code Analysis)</li>
+                        <li><span class="fa-li"><i class="fas fa-sync text-primary"></i></span><b>Automation:</b> n8n Workflow, Python CAPI, ETL Pipelines</li>
                     </ul>
-                    <ul class="fa-ul mb-0 fa-ul-font-size" >
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            PHP,JQUERY,AJAX,CSS,HTML,MySQL
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Git
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Nodepad++,Visual Studio Code,Docker
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Laravel,Wordpress,Magento1,Magento2,Joomla
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            API,Server Maintenance,System Maintenance,System Analysis,Database Normalization
-                        </li>
+
+                    <div class="section-subheading">Backend & Architecture</div>
+                    <ul class="fa-ul mb-4 fa-ul-font-size">
+                        <li><span class="fa-li"><i class="fas fa-code text-primary"></i></span><b>Languages:</b> PHP (Laravel 12 / Lumen), Python, SQL</li>
+                        <li><span class="fa-li"><i class="fas fa-sitemap text-primary"></i></span><b>Fintech:</b> LINE Pay (RegKey), 3rd-party Payment & Logistics Gateways</li>
+                    </ul>
+
+                    <div class="section-subheading">Cloud & Communication</div>
+                    <ul class="fa-ul mb-0 fa-ul-font-size">
+                        <li><span class="fa-li"><i class="fas fa-cloud text-primary"></i></span><b>Infrastructure:</b> GCP (Cloud Armor), Aliyun IoT, Docker, Gitflow</li>
+                        <li><span class="fa-li"><i class="fas fa-wifi text-primary"></i></span><b>Protocols:</b> MQTT, LoRaWAN Payload Parsing</li>
                     </ul>
                 </div>
             </section>
-            <hr class="m-0" />
-            <!-- Interests-->
-            <!-- <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <p class="mb-0 interests-p-size">持續不斷地學習英文，進修推廣部，自助遊學，只要不能擊敗我，都只會讓我更強大</p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <p class="mb-0 interests-p-size">堅持不懈地強身健體，運動中心，健身房，爬山露營，只有強健的體魄，才能支撐我完成更多夢想</p>
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            <p class="mb-0 interests-p-size">對於‘食’，追求完美近乎苛求，咖啡，美食，相信吃得好中好，方為人上人</p>
-                        </li>
-                        </ul>
-                </div>
-            </section> -->
-            <hr class="m-0" />
-            <!-- Awards-->
+
+            <hr />
+
             <section class="resume-section" id="awards">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Special Projects</h2>
-                    <ul class="fa-ul mb-0 ul-award" >
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            I set up the first virtual currency ATM in Kaohsiung.
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Our e-commerce company's marketing set a record of three consecutive weeks with daily sales exceeding 6 million won, with a maximum of 30 million won.
-                        </li>
+                    <h2 class="mb-5"><i class="fas fa-award mr-3 text-primary"></i>Key Achievements</h2>
+                    <ul class="fa-ul mb-0 ul-award">
+                        <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span><b>Revenue Milestones</b>: Collaborated on the IplayGame91 platform, achieving a daily revenue peak of 60 million KRW through tech optimization.</li>
+                        <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span><b>Recurring Billing Implementation</b>: Successfully integrated LINE Pay auto-debit mechanisms in solo projects to establish steady cash flow models.</li>
+                        <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span><b>IoT Data Breakthrough</b>: Transformed raw LoRaWAN sensor data into actionable business monitoring indicators.</li>
+                        <li><span class="fa-li"><i class="fas fa-trophy text-warning"></i></span><b>Enterprise-Scale Architecture</b>: Independently built monetization and point-wallet systems with high-security standards (GCP Cloud Armor).</li>
                     </ul>
                 </div>
             </section>
-            <hr class="m-0" />
-            <!-- myself-->
-            <!-- <section class="resume-section" id="myself">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">自傳</h2>
-                    
-                        <p>自小於嘉義糖廠長大，在爺爺、奶奶的教育下，養成務實的性格，遇到問題會找尋最恰當且合理的方法解決，
-                            認為腳踏實地，穩扎穩打提升自我的能力，才是最扎實的後盾。
-                        </p>
-                        <p>大學時期，因家庭環境，開始半工半讀，大一時，因未有相應的程式開發能力，故先選擇家教和補習班兼職，累積程式能力，
-                        大二開始參加系上舉辦各種程式研習，從HTML、CSS、PHP、JAVASCRIPT等開始學習。
-                        </p>
-                        <p>大三、四時參與系網站開發和中原大學教官室網站開發與維護 ，並同時與系上同學組織團隊，於外部接案，
-                            開發教會志願者管理系統及宏橋寢具存貨管理系統，等待當兵階段，開始以個人名義接案。
-                        </p>
-                        <p>
-                            畢業後於普安科技任職QA工程師，因年輕尚未確立方向，想嘗試不同類型工作，半年後轉換至補教業從事三年，
-                            對於社會經驗,工作態度,對人處事以及交流溝通皆得到提升，並且在機緣巧合之下，
-                            於2017年與大學團隊於台中建立莫博創意股份有限公司，並於2018年與其他合作夥伴前往韓國建立遊戲電商平台，
-                            後因COVID-19疫情原因回台，並回到補教業從事教學，因對程式熱情未減並於2023年回到資訊業至今。
-                        </p>
-
-                        
-                </div>
-            </section> -->
         </div>
-        <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
 </html>
